@@ -28,8 +28,8 @@ module.exports.hello = function(event, context, callback) {
     headers: {
       'x-custom-header': 'My Header Value',
     },
-    body: JSON.stringify({ message: `Hello, the current time is ${new Date().toTimeString()}`}),
+    body: JSON.stringify({ message: `hello world!`}),
   };
 
-  callback(null, response);
+  return callback(null, response);
 };
