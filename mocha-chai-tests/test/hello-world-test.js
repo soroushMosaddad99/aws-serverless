@@ -9,6 +9,7 @@ describe('Hello', function() {
     it('This is a hello world test', function(done) {
         container
             .get(``)
+            .expect(`{"message":"hello world!"}`)
             .end(function(err, res) {
                 if(err) return done(err);
                 expect(err).to.be.null;
