@@ -8,7 +8,7 @@ describe('Hello', function() {
     const container = request(myURL);
     it('This is a hello world test', function(done) {
         container
-            .get(`message`)
+            .get(``)
             .end(function(err, res) {
                 if(err) return done(err);
                 expect(err).to.be.null;
