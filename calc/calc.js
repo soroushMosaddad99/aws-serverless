@@ -1,8 +1,8 @@
 
-const add = (a, b) => a + b
-const subtract = (a, b) => a - b
-const multiply = (a, b) => a * b
-const divide = (a, b) => b !== 0 ? (a / b) : undefined
+const add = (x, y) => x + y
+const subtract = (x, y) => x - y
+const multiply = (x, y) => x * y
+const divide = (x, y) => y !== 0 ? (x / y) : undefined
 
 module.exports = {
     add,
